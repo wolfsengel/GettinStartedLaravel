@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif Display', serif;
+    background-color: #194848;
+  }
+
+  h1 {
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    font-size: 3em;
+    color: #869a8f;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-panel {
+    width: 20%;
+    background-color: #163838;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .left-panel img {
+    width: 50%;
+    height: auto;
+    margin: 10%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #869a8f;
+    font-size: x-large;
+    margin: 10%;
+  }
+  
+  a:hover {
+    color: #b2b2ff;
+  }
+  
+  .left-panel ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+  }
+  
+  .main-content {
+    width: 70%;
+    background-image: url('/public/mi6-seal-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f2f2f2;
+    padding: 20px;
+  }
