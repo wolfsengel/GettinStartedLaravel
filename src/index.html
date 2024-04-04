@@ -9,18 +9,36 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
+    <div id="main" class="mainContent">
+      <button id="menuBtn" class="displayMenuButton" onclick="toggleNav()">+</button>  
+      <h1>Welcome to MI6</h1>
+    </div>
 
-    <h1>Welcome to MI6</h1>
-    <nav>
+    <div id="sidebar" class="sideBar">
+      <img src="/public/mi6-seal.png" class="sidebarImage"/>
       <a href="#">Home</a>
       <a href="#">People of interest</a>
-      <a href="#">MILITAR 3525</a>
-      <a href="#">LIGENCE</a>
-      <a href="#">PER DIVISION 00</a>
-    </nav>
+    </div>
 
-    <!-- your code here -->
-    <!-- refer to images in /public with URLs beginning with / -->
 
   </body>
+
+  <script>
+    function toggleNav(){
+      const sidebar=document.getElementById("sidebar");
+      const mainContent=document.getElementById("main");
+      const menuBtn=document.getElementById("menuBtn");
+    
+      if(sidebar.style.width == "250px"){
+        sidebar.style.width="0";
+        mainContent.style.paddingLeft="0";
+        menuBtn.innerHTML=">";
+      } else {
+        sidebar.style.width="250px";
+        mainContent.style.paddingLeft="250px";
+        menuBtn.innerHTML="<"
+      }
+    }
+    
+  </script>
 </html>

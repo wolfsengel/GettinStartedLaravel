@@ -1,32 +1,74 @@
+
+
 body {
-    background-color: #0b233b;
-    background-image: url(/public/mi6-seal-bg.png) ;
+    background-color: #2B5554;
+    background-image: url(/public/mi6-seal-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    align-items: center;
     color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;    
-    padding-top: 50px;
-    font-family: Arial, sans-serif;
 }
+
 h1 {
     font-size: 2.5em;
+    font-family: 'Noto Serif Display', serif;
     color: white;
-    margin-bottom: 30px;
+    transform: translateY(-50%);
+    text-align: center;
 }
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.sideBar {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #163838; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
 }
-nav a {
-    color: white;
+
+.sideBar a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    margin: 0 10px 10px 0;
-    padding: 5px;
-    border-radius: 5px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
-nav a:hover {
-    background-color: #30475e;
+
+.sideBar a:hover {
+    background-color: #2e7272;
+    border-radius: 10px ;
+    padding: 5px;
+}
+
+.sidebarImage{
+    width: 100px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.displayMenuButton {
+    top: auto;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.displayMenuButton:hover {
+    background-color: #163838;
+    border-radius: 10px;
+}
+
+
+#main {
+    transition: margin-left .4s;
 }
